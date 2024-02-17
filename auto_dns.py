@@ -48,7 +48,7 @@ if public_ip != last_ip:
         response = requests.put(url, headers=headers, json=data)
 
        if response.status_code ==   200:
-            print(f'DNS record for {record["name"]} actualizado exitosamente.')
+            print(f'DNS record for {record["name"]} successfully updated..')
         else:
             print(f'Error updating the DNS record for {record["name"]}: {response.content}')
 
