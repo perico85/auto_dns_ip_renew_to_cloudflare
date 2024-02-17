@@ -42,7 +42,7 @@ if public_ip != last_ip:
             'name': record['name'],
             'content': public_ip,
             'ttl':   120,
-            'proxied': False
+            'proxied': True
         }
 
         response = requests.put(url, headers=headers, json=data)
